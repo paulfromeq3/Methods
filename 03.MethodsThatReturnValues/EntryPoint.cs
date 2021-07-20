@@ -15,10 +15,9 @@ class EntryPoint
         // Challenge #1
         // Create a Method to sort 3 numbers in ascending order, return the output as an array
 
+        string sortedValues = Sort(1,3,2);
 
-        Sort(1, 3, 2);
-
-
+        Console.WriteLine(sortedValues);
         
     }
 
@@ -39,7 +38,7 @@ class EntryPoint
     {
         string sorted = string.Empty;
 
-        if ((a > b) && (b > c))
+        if ((a < b) && (b < c))
         {
             sorted = a + " ";
             if (b < c)
@@ -50,6 +49,7 @@ class EntryPoint
             {
                 sorted = sorted + c + " " + b;
             }
+            Console.WriteLine($"first sort: {sorted}");
         }
         else if ((b < a) && (b < c))
         {
@@ -62,6 +62,7 @@ class EntryPoint
             {
                 sorted = sorted + c + " " + a;
             }
+            Console.WriteLine($"second sort: {sorted}");
         }
         else if ((c < a) && (c < b))
         {
@@ -74,8 +75,9 @@ class EntryPoint
             {
                 sorted = sorted + b + " " + a;
             }
+            Console.WriteLine($"third sort: {sorted}");
         }
-        Console.WriteLine($"The result is { sorted}");
+        Console.WriteLine($"The result is {sorted}");
         return sorted;
     }
 }

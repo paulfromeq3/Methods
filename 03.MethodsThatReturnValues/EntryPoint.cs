@@ -10,15 +10,12 @@ class EntryPoint
         //Console.WriteLine(Addition(1, 1));
         //// Here the Method is almost treated like a variable
         //Console.WriteLine(Addition(Addition(1,2), Addition(4,5)));
-
-
         // Challenge #1
         // Create a Method to sort 3 numbers in ascending order, return the output as an array
+        int[] sortedArray = Sort(1, 3, 2);
+        Console.WriteLine($"{}"sortedArray[0]}, sortedArray[1], sortedArray[2]);
 
-        string sortedValues = Sort(1,3,2);
 
-        Console.WriteLine(sortedValues);
-        
     }
 
     // The void keyword is replaced with the data type
@@ -30,54 +27,56 @@ class EntryPoint
     {
         // Variables declared inside the Method are only available to the Method
         int result = firstNumber + secondNumber;
-        return result;  // It's an integer Method so it can only return integer values
+        return result;  // It's an integer array Method so it can only return integer values
     }
 
 
-    static string Sort(int a, int b, int c)
+    static int[] Sort(int a, int b, int c)
     {
-        string sorted = string.Empty;
+        int[] sorted = new int[3];
 
-        if ((a < b) && (b < c))
+        if ((a < b) && (a < c))
         {
-            sorted = a + " ";
+            sorted[0] = a;
             if (b < c)
             {
-                sorted = sorted + b + " " + c;
+                sorted[1] = b;
+                sorted[2] = c;
             }
             else
             {
-                sorted = sorted + c + " " + b;
+                sorted[1] = c;
+                sorted[2] = b;
             }
-            Console.WriteLine($"first sort: {sorted}");
         }
         else if ((b < a) && (b < c))
         {
-            sorted = b + " ";
+            sorted[0] = b;
             if (a < c)
             {
-                sorted = sorted + a + " " + c;
+                sorted[1] = a;
+                sorted[2] = c;
             }
             else
             {
-                sorted = sorted + c + " " + a;
+                sorted[1] = c;
+                sorted[2] = a;
             }
-            Console.WriteLine($"second sort: {sorted}");
         }
         else if ((c < a) && (c < b))
         {
-            sorted = c + " ";
+            sorted[0] = c;
             if (a < b)
             {
-                sorted = sorted + a + " " + b;
+                sorted[1] = a;
+                sorted[2] = b;
             }
             else
             {
-                sorted = sorted + b + " " + a;
+                sorted[1] = b;
+                sorted[2] = a;
             }
-            Console.WriteLine($"third sort: {sorted}");
         }
-        Console.WriteLine($"The result is {sorted}");
         return sorted;
     }
 }

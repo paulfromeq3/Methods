@@ -14,6 +14,21 @@ class EntryPoint
         // Create a Method to sort 3 numbers in ascending order, return the output as an array
         int[] sortedArray = Sort(3, 1, 2);
         Console.WriteLine($"{sortedArray[0]}, {sortedArray[1]}, {sortedArray[2]}");
+        // Or an easier way to display an array...
+        foreach (var item in sortedArray)
+        {
+            Console.Write($"{item}, ");
+        }
+        Console.WriteLine();
+
+        
+
+        // You could also do it like this, and never assign the results to a variable
+        foreach (var item in Sort(3, 1, 2))
+        {
+            Console.Write($"{item}, ");
+
+        }
 
         
     }

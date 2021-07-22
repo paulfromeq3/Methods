@@ -5,9 +5,11 @@ VisualStudioVersion = 16.0.31424.327
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01.Methods", "Methods\01.Methods.csproj", "{5B2B9C19-6B4A-4408-972C-820568C32FBE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.VoidMethodsRetry", "02.VoidMethodsRetry\02.VoidMethodsRetry.csproj", "{28FD8B11-4CFA-451C-AD5C-48CA1C4E5405}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02.VoidMethodsRetry", "02.VoidMethodsRetry\02.VoidMethodsRetry.csproj", "{28FD8B11-4CFA-451C-AD5C-48CA1C4E5405}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.MethodsThatReturnValues", "03.MethodsThatReturnValues\03.MethodsThatReturnValues.csproj", "{E6E61708-6501-476E-8FF9-A707CF7EFB79}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03.MethodsThatReturnValues", "03.MethodsThatReturnValues\03.MethodsThatReturnValues.csproj", "{E6E61708-6501-476E-8FF9-A707CF7EFB79}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.OverloadingMethods", "04.OverloadingMethods\04.OverloadingMethods.csproj", "{5F30645B-F056-4908-8C8C-D96558591CC0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{E6E61708-6501-476E-8FF9-A707CF7EFB79}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E6E61708-6501-476E-8FF9-A707CF7EFB79}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E6E61708-6501-476E-8FF9-A707CF7EFB79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F30645B-F056-4908-8C8C-D96558591CC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F30645B-F056-4908-8C8C-D96558591CC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F30645B-F056-4908-8C8C-D96558591CC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F30645B-F056-4908-8C8C-D96558591CC0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

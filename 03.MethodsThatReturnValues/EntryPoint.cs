@@ -12,10 +12,10 @@ class EntryPoint
         //Console.WriteLine(Addition(Addition(1,2), Addition(4,5)));
         // Challenge #1
         // Create a Method to sort 3 numbers in ascending order, return the output as an array
-        int[] sortedArray = Sort(1, 3, 2);
-        Console.WriteLine($"{}"sortedArray[0]}, sortedArray[1], sortedArray[2]);
+        int[] sortedArray = Sort(3, 1, 2);
+        Console.WriteLine($"{sortedArray[0]}, {sortedArray[1]}, {sortedArray[2]}");
 
-
+        
     }
 
     // The void keyword is replaced with the data type

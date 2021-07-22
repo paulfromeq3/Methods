@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02.VoidMethodsRetry", "02.V
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03.MethodsThatReturnValues", "03.MethodsThatReturnValues\03.MethodsThatReturnValues.csproj", "{E6E61708-6501-476E-8FF9-A707CF7EFB79}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.OverloadingMethods", "04.OverloadingMethods\04.OverloadingMethods.csproj", "{5F30645B-F056-4908-8C8C-D96558591CC0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04.OverloadingMethods", "04.OverloadingMethods\04.OverloadingMethods.csproj", "{5F30645B-F056-4908-8C8C-D96558591CC0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05.VarNumOfArgs", "05.VarNumOfArgs\05.VarNumOfArgs.csproj", "{05CBC396-7D97-44DC-9FAD-14ABB0994F0A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{5F30645B-F056-4908-8C8C-D96558591CC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5F30645B-F056-4908-8C8C-D96558591CC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5F30645B-F056-4908-8C8C-D96558591CC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05CBC396-7D97-44DC-9FAD-14ABB0994F0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05CBC396-7D97-44DC-9FAD-14ABB0994F0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05CBC396-7D97-44DC-9FAD-14ABB0994F0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05CBC396-7D97-44DC-9FAD-14ABB0994F0A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

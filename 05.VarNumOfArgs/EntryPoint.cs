@@ -62,10 +62,15 @@ class EntryPoint
         {
             if ((text[i].ToString() != "[") && (text[i].ToString() != "]") && (text[i].ToString() != " "))
             {
-                //Console.WriteLine(text[i]);
-                Console.WriteLine(variables[Convert.ToInt32(text[i])]);
+                Console.WriteLine(text[i]);
             }
+
         }
+        for (int j = 0; j < variables.Length; j++)
+        {
+            Console.WriteLine(variables[j]);
+        }
+        //Console.WriteLine(variables[Convert.ToInt32(text[i])]);
 
 
     }

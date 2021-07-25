@@ -52,25 +52,19 @@ class EntryPoint
         string newText = string.Empty;
         for (int i = 0; i < text.Length; i++)
         {
+            if (text[i].ToString() == "[")
+            {
+                newText += variables[text[i + 1]];
+
+            }
             newText += text[i];
         }
         Console.WriteLine(newText);
 
         // if you take a character of text like text[i], you get a char type
         // convert it to string with the ToString() Method if you want to use it
-        for (int i = 0; i < text.Length; i++)
-        {
-            if ((text[i].ToString() != "[") && (text[i].ToString() != "]") && (text[i].ToString() != " "))
-            {
-                Console.WriteLine(text[i]);
-            }
 
-        }
-        for (int j = 0; j < variables.Length; j++)
-        {
-            Console.WriteLine(variables[j]);
-        }
-        //Console.WriteLine(variables[Convert.ToInt32(text[i])]);
+
 
 
     }

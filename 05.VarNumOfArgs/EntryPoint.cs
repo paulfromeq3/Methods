@@ -37,7 +37,9 @@ class EntryPoint
         string secondWord = "WON!";
         string thirdWord = "Biden";
         string fourthWord = "LOST!";
-        MyWriteLine("[0] [2] [1] [3]", firstWord, secondWord, thirdWord, fourthWord);
+        string lastName = "Walker";
+
+        MyWriteLine("Paul [0]", lastName);
 
 
 

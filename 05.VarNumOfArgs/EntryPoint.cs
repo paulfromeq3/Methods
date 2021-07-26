@@ -33,13 +33,12 @@ class EntryPoint
         // Basically recreate it in your own way
         // I guess use [] square brackets to separate the numbers
 
-        string firstWord = "Trump";
-        string secondWord = "WON!";
-        string thirdWord = "Biden";
-        string fourthWord = "LOST!";
+
+        string firstName = "Paul";
+
         string lastName = "Walker";
 
-        MyWriteLine("Paul [0]", lastName);
+        MyWriteLine("[0] [1]", firstName, lastName);
 
 
 

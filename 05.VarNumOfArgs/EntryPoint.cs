@@ -56,10 +56,14 @@ class EntryPoint
         {
             if (text[i].ToString() == "[")
             {
-                newText += variables[text[i + 1]];
+                newText += variables[int.Parse(text[i + 1].ToString())];
+                i += 2;
+            }
+            else
+            {
+            newText += text[i];
 
             }
-            newText += text[i];
         }
         Console.WriteLine(newText);
 

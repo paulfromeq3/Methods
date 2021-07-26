@@ -38,7 +38,7 @@ class EntryPoint
 
         string lastName = "Walker";
 
-        MyWriteLine("[0] [1]", firstName, lastName);
+        MyWriteLine("[0] [1] [0] [1] [0] [1]", firstName, lastName);
 
 
 

@@ -46,16 +46,27 @@ class EntryPoint
 
 
     }
+    // If you wanted to return the text instead of just printing it to the console, change "void" to "string" in the method,
+    // and add "return text;" line to the body of the method.
 
     static void MyWriteLine(string text, params string[] variables)
     {
 
         string newText = string.Empty;
+        int placeholderIndex = 0;
         for (int i = 0; i < text.Length; i++)
         {
             if (text[i].ToString() == "[")
             {
-                newText += variables[int.Parse(text[i + 1].ToString())];
+                // When you index something from a string, it is returned as a character type
+                // First we need to convert it to a string, and then to an integer
+                // It takes all that to work with the number after the open curley braces as an integer
+                // To make it easier to read, it is now split up
+
+                placeholderIndex = int.Parse(text[i + 1].ToString());
+                // The placeholderIndex variable calculates the placeholder index
+
+                newText += variables[placeholderIndex];
                 i += 2;
             }
             else

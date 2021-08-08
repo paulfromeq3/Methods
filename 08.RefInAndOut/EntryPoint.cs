@@ -26,6 +26,21 @@ class EntryPoint
         // Why use the "ref" keyword?
         // It's handy when you have multiple arguments.
 
+        ////////////////////////
+        // Another example of ref: coordinates
+        double x = 10;
+        CorrectTheCoordinates(ref x, out double y);
+        Console.WriteLine($"{x}, {y}");
+
+        // The "out" keyword.
+        // Similar to ref, but must always be assigned INSIDE the method.
+        // So create the empty variable in the Main method.
+        // Then give it a value inside the other method.
+        // After that, you are free to use them from outside the method.
+        // Shortcut:  you can create the variable when you call the method.
+
+        Rectangle(5, 10, out double area, out double perimeter);
+        Console.WriteLine($"The area is: {area}.\nThe perimeter is {perimeter}.");
 
 
 
@@ -39,6 +54,25 @@ class EntryPoint
         // Change "void" to "int" in the declaration.
         // Then add:
         // return number;
+    }
+
+    static void CorrectTheCoordinates(ref double x, out double y)
+    {
+        // say that x needs to be corrected by 10%
+        x *= 1.1;
+        y = 10;
+    }
+
+    // Challenge
+    // Create a method that takes 2 arguments, height and width.
+    // Calculate the area and perimeter of a rectangle.
+    // Return the values and output them from the console outside the method.
+    static void Rectangle(double height, double width, out double area, out double perimeter)
+    {
+        height = 12;
+        width = 32;
+        area = height * width;
+        perimeter = height * 2 + width * 2;
 
     }
 }
